@@ -13,13 +13,13 @@
 class Curlix < Formula
   desc "Curlix CLI — authenticate and connect to your databases through curlix"
   homepage "https://github.com/curlix-io/curlix"
-  version "1.2.3"
+  version "1.2.4"
   license :cannot_represent # Proprietary
 
   on_macos do
     on_arm do
       url "https://github.com/curlix-io/homebrew-tap/releases/download/cli-v#{version}/curlix-#{version}-darwin-arm64.tar.gz"
-      sha256 "e2f08ef510df04b9ce59afc86a45e99022019317e939b9aff6a0bdcee5e39678"
+      sha256 "6390ea4cae045aeb46c04dffbb230b8839d596e7fb4dea6f420ec5b50be267ba"
     end
     on_intel do
       url "https://github.com/curlix-io/homebrew-tap/releases/download/cli-v#{version}/curlix-#{version}-darwin-x86_64.tar.gz"
