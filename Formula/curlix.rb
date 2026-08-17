@@ -21,7 +21,7 @@ class Curlix < Formula
   on_macos do
     on_arm do
       url "https://github.com/curlix-io/brew/releases/download/cli-v#{version}/curlix-#{version}-darwin-arm64.tar.gz"
-      sha256 "e296e527e62665b90d6354371b79c352a7831cb740af70272700ab5a8a53fddb"
+      sha256 "11279addc29afd32935c5e5d3bcfef96bbc222f74f77ae087f0bd9c71d991195"
     end
     # darwin-x86_64 (macos-13 runner) has never produced a successful build — every
     # release-cli.yml run for this leg has hung/been cancelled waiting on a runner.
