@@ -8,16 +8,16 @@
 #
 # releases.curlix.io/release/install-cli.sh is a Cloudflare Worker redirect
 # (infrastructure/cloudflare-workers/releases-redirect/) in front of a *mirrored copy* of this
-# file on curlix-io/brew, not this file directly — curlix-io/curlix (this repo) is private, so
+# file on curlix-io/homebrew-cli, not this file directly — curlix-io/curlix (this repo) is private, so
 # raw.githubusercontent.com can't serve from it publicly. The release-cli.yml "tap" job copies
-# this file into the curlix-io/brew repo on every release; edit it here, it ships from there.
+# this file into the curlix-io/homebrew-cli repo on every release; edit it here, it ships from there.
 #
 # Environment:
 #   CURLIX_CLI_VERSION   — release tag suffix (default: latest cli-v* release)
 #   CURLIX_INSTALL_DIR   — destination directory (default: /usr/local/bin or ~/.local/bin)
 set -euo pipefail
 
-REPO="${CURLIX_CLI_REPO:-curlix-io/brew}"
+REPO="${CURLIX_CLI_REPO:-curlix-io/homebrew-cli}"
 INSTALL_DIR="${CURLIX_INSTALL_DIR:-}"
 VERSION="${CURLIX_CLI_VERSION:-}"
 

@@ -3,7 +3,7 @@
 Install the Curlix CLI (auth-first client for `login`, `connect`, etc.):
 
 ```sh
-brew tap curlix-io/brew https://github.com/curlix-io/brew.git
+brew tap curlix-io/cli
 brew install curlix
 curlix login
 ```
@@ -11,15 +11,19 @@ curlix login
 Or, without a separate `brew tap` step:
 
 ```sh
-brew install curlix-io/brew/curlix
+brew install curlix-io/cli/curlix
 ```
+
+(This repo is named `curlix-io/homebrew-cli` — Homebrew's own naming convention
+[`homebrew-<tapname>`] is what makes the short `curlix-io/cli` form above resolve without
+needing the full repo URL.)
 
 ## Layout
 
 - `Formula/curlix.rb` — downloads prebuilt binaries from this tap's own GitHub Releases
-  (`cli-v*` tags on [curlix-io/brew](https://github.com/curlix-io/brew/releases)), not from
-  [curlix-io/curlix](https://github.com/curlix-io/curlix) — that repo is private, so its own
-  `cli-v*` releases (created by the same release job, before publishing here) are an internal
+  (`cli-v*` tags on [curlix-io/homebrew-cli](https://github.com/curlix-io/homebrew-cli/releases)),
+  not from [curlix-io/curlix](https://github.com/curlix-io/curlix) — that repo is private, so its
+  own `cli-v*` releases (created by the same release job, before publishing here) are an internal
   CI record only and aren't fetchable by `brew`/`curl` outside the org.
 
 The canonical formula template lives in the main repo at `packaging/homebrew/curlix.rb`. The
