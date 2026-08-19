@@ -15,13 +15,13 @@ class Curlix < Formula
   # Not the GitHub source repo (curlix-io/curlix) — that's private, so `brew info curlix` would
   # link users to a 404/login wall. The product's own public site is the right "homepage" here.
   homepage "https://curlix.io"
-  version "1.2.8"
+  version "1.2.24"
   license :cannot_represent # Proprietary
 
   on_macos do
     on_arm do
       url "https://github.com/curlix-io/brew/releases/download/cli-v#{version}/curlix-#{version}-darwin-arm64.tar.gz"
-      sha256 "6b12666c4e106c653dc73d06e1d4b8642f76a75100754b02c2898ac4bff95c88"
+      sha256 "a9a38d756f00943190de87e13607bf7b28ca21a4aaa6766a42b63dd16978b28c"
     end
     # darwin-x86_64 (macos-13 runner) has never produced a successful build — every
     # release-cli.yml run for this leg has hung/been cancelled waiting on a runner.
